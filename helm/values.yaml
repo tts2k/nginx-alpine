@@ -16,4 +16,5 @@ service:
   type: ClusterIP
   port: 8111
 
-configmapData: "alpine"
+configmap:
+  name: nginx-version
