@@ -4,7 +4,7 @@ metadata:
   labels:
     app: {{ .Values.image.repository }}
     tag: {{ .Values.image.tag }}
-  name: nginx-alpine
+  name: "{{ .Values.image.repository }}-{{ .Values.image.tag }}"
   namespace: demo
 spec:
   replicas: {{ .Values.replicas }}
