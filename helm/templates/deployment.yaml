@@ -29,4 +29,4 @@ spec:
         name: {{ .Values.image.name }}
         resources:
           cpu: {{ .Values.resources.cpu }}
-          memory: "{{ .Values.resources.memory }}"
+          memory: {{ .Values.resources.memory }}
